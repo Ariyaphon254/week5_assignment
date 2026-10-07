@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css">
+</head>
+
+<body class="min-h-screen bg-neutral-300 text-neutral-900 font-serif">
+
+    <!-- Navigation -->
+    <header class="navbar sticky top-0 z-50 bg-neutral-300/95 border-b border-neutral-500 px-5 md:px-10">
+
+        <div class="navbar-start">
+            <button
+                class="btn btn-ghost btn-sm md:hidden"
+                onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+                aria-label="Open menu">
+                ☰
+            </button>
+        </div>
+
+        <nav class="navbar-center hidden md:flex">
+            <div class="flex gap-10 lg:gap-24">
+                <a href="#home" class="link link-hover text-sm lg:text-base">HOME</a>
+                <a href="#about" class="link link-hover text-sm lg:text-base">ABOUT</a>
+                <a href="#gallery" class="link link-hover text-sm lg:text-base">GALLERY</a>
+            </div>
+        </nav>
+
+        <div class="navbar-end"></div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden sticky top-16 z-40 bg-neutral-300 border-b border-neutral-500 md:hidden">
+        <nav class="flex flex-col p-4 gap-2">
+            <a href="#home" class="btn btn-ghost justify-start">HOME</a>
+            <a href="#about" class="btn btn-ghost justify-start">ABOUT</a>
+            <a href="#gallery" class="btn btn-ghost justify-start">GALLERY</a>
+        </nav>
+    </div>
+
+    <main class="w-[92%] max-w-6xl mx-auto">
+
+        <!-- HOME -->
+        <section id="home" class="scroll-mt-20">
+
+            <div class="bg-neutral-900 text-neutral-100 text-center px-5 py-14 md:py-20">
+                <h1 class="text-3xl md:text-5xl font-normal">
+                    อริยาภรณ์ หาธรรม
+                </h1>
+
+                <p class="mt-3 text-xs md:text-sm tracking-widest">
+                    COMPUTER SCIENCE STUDENT
+                </p>
+
+                <div class="divider w-12 mx-auto my-2 before:bg-neutral-600 after:bg-neutral-600"></div>
+            </div>
+
+            <!-- daisyUI cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 py-3">
+
+                <div class="card bg-neutral-200 border-4 border-neutral-100 rounded-none min-h-36">
+                    <div class="card-body p-4">
+                        <h2 class="card-title text-sm">profile</h2>
+                        <p class="text-xs leading-relaxed">
+                            I am a second-year Computer Science student.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-neutral-200 border-4 border-neutral-100 rounded-none min-h-36">
+                    <div class="card-body p-4">
+                        <h2 class="card-title text-sm">study</h2>
+                        <p class="text-xs leading-relaxed">
+                            Bangkok University<br>
+                            Faculty of Information Technology and Innovation
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-neutral-200 border-4 border-neutral-100 rounded-none min-h-36">
+                    <div class="card-body p-4">
+                        <h2 class="card-title text-sm">goal</h2>
+                        <p class="text-xs leading-relaxed">
+                            Become a Full-Stack Developer.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-neutral-200 border-4 border-neutral-100 rounded-none min-h-36">
+                    <div class="card-body p-4">
+                        <h2 class="card-title text-sm">student id</h2>
+                        <p class="text-xs leading-relaxed">
+                            ใส่รหัสนักศึกษาของตัวเอง
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-neutral-200 border-4 border-neutral-100 rounded-none min-h-36">
+                    <div class="card-body p-4">
+                        <h2 class="card-title text-sm">html</h2>
+                        <p class="text-xs leading-relaxed">
+                            I use HTML to build web page structure.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-neutral-200 border-4 border-neutral-100 rounded-none min-h-36">
+                    <div class="card-body p-4">
+                        <h2 class="card-title text-sm">css</h2>
+                        <p class="text-xs leading-relaxed">
+                            I learn Tailwind CSS and daisyUI.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-neutral-200 border-4 border-neutral-100 rounded-none min-h-36">
+                    <div class="card-body p-4">
+                        <h2 class="card-title text-sm">javascript</h2>
+                        <p class="text-xs leading-relaxed">
+                            I use JavaScript for simple web interactions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-neutral-200 border-4 border-neutral-100 rounded-none min-h-36">
+                    <div class="card-body p-4">
+                        <h2 class="card-title text-sm">future</h2>
+                        <p class="text-xs leading-relaxed">
+                            I want to create useful and easy-to-use websites.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="scroll-mt-20 mt-12">
+
+            <div class="bg-neutral-900 text-neutral-100 text-center px-5 py-12 md:py-16">
+                <h2 class="text-2xl md:text-4xl font-normal">
+                    A sentence here.
+                </h2>
+                <p class="mt-2 text-xs tracking-wider">
+                    here's your sentence.
+                </p>
+                <div class="divider w-12 mx-auto my-2 before:bg-neutral-600 after:bg-neutral-600"></div>
+            </div>
+
+            <div class="bg-neutral-900 text-neutral-100">
+
+                <div class="p-5 md:px-10 md:py-6 border-t border-neutral-700">
+                    <h3 class="font-bold text-sm">quick introduction</h3>
+                    <p class="mt-2 text-xs md:text-sm text-neutral-300 leading-relaxed">
+                        I am a second-year Computer Science student at Bangkok University.
+                    </p>
+                </div>
+
+                <div class="p-5 md:px-10 md:py-6 border-t border-neutral-700">
+                    <h3 class="font-bold text-sm">what i learn</h3>
+                    <p class="mt-2 text-xs md:text-sm text-neutral-300 leading-relaxed">
+                        I learn programming, web development, databases and computer science fundamentals at university.
+                    </p>
+                </div>
+
+                <div class="p-5 md:px-10 md:py-6 border-t border-neutral-700">
+                    <h3 class="font-bold text-sm">what i want to do</h3>
+                    <p class="mt-2 text-xs md:text-sm text-neutral-300 leading-relaxed">
+                        I want to build easy-to-use web applications and develop my skills toward a Full-Stack Developer career.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery" class="scroll-mt-20 mt-12 bg-neutral-900 p-5 md:p-8">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+
+                <div class="card bg-base-200 rounded-none border-4 border-base-100 overflow-hidden aspect-square">
+                    <img src="C:\Users\ferom\cs240\CS240-Week5_Asssignment\images\4e9811fe-380c-4893-9a76-d6e726a31c79.png" alt="Gallery Image 01"
+                        class="w-full h-full object-cover"
+                        onerror="this.style.display='none'; this.parentElement.querySelector('.fallback').classList.remove('hidden')">
+                    <div class="fallback hidden w-full h-full place-items-center bg-neutral-300 text-neutral-700 text-xs">
+                        Image 01
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 rounded-none border-4 border-base-100 overflow-hidden aspect-square">
+                    <img src="C:\Users\ferom\cs240\CS240-Week5_Asssignment\images\5803626d-ee78-48af-aadd-96e10cca4a71.png" alt="Gallery Image 02"
+                        class="w-full h-full object-cover"
+                        onerror="this.style.display='none'; this.parentElement.querySelector('.fallback').classList.remove('hidden')">
+                    <div class="fallback hidden w-full h-full place-items-center bg-neutral-300 text-neutral-700 text-xs">
+                        Image 02
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 rounded-none border-4 border-base-100 overflow-hidden aspect-square">
+                    <img src="C:\Users\ferom\cs240\CS240-Week5_Asssignment\images\6603d8be-e4bf-470c-b049-478e834b88ba.png" alt="Gallery Image 03"
+                        class="w-full h-full object-cover"
+                        onerror="this.style.display='none'; this.parentElement.querySelector('.fallback').classList.remove('hidden')">
+                    <div class="fallback hidden w-full h-full place-items-center bg-neutral-300 text-neutral-700 text-xs">
+                        Image 03
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 rounded-none border-4 border-base-100 overflow-hidden aspect-square">
+                    <img src="C:\Users\ferom\cs240\CS240-Week5_Asssignment\images\db0b2523-3772-4816-89c1-01180820d166.png" alt="Gallery Image 04"
+                        class="w-full h-full object-cover"
+                        onerror="this.style.display='none'; this.parentElement.querySelector('.fallback').classList.remove('hidden')">
+                    <div class="fallback hidden w-full h-full place-items-center bg-neutral-300 text-neutral-700 text-xs">
+                        Image 04
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 rounded-none border-4 border-base-100 overflow-hidden aspect-square">
+                    <img src="C:\Users\ferom\cs240\CS240-Week5_Asssignment\images\d0c6f3c1-d341-4567-8ee4-b2e747f9015f.png" alt="Gallery Image 05"
+                        class="w-full h-full object-cover"
+                        onerror="this.style.display='none'; this.parentElement.querySelector('.fallback').classList.remove('hidden')">
+                    <div class="fallback hidden w-full h-full place-items-center bg-neutral-300 text-neutral-700 text-xs">
+                        Image 05
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 rounded-none border-4 border-base-100 overflow-hidden aspect-square">
+                    <img src="C:\Users\ferom\cs240\CS240-Week5_Asssignment\images\2bc496b3-ab73-4347-95ef-674f60566ad5.png" alt="Gallery Image 06"
+                        class="w-full h-full object-cover"
+                        onerror="this.style.display='none'; this.parentElement.querySelector('.fallback').classList.remove('hidden')">
+                    <div class="fallback hidden w-full h-full place-items-center bg-neutral-300 text-neutral-700 text-xs">
+                        Image 06
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 rounded-none border-4 border-base-100 overflow-hidden aspect-square">
+                    <img src="C:\Users\ferom\cs240\CS240-Week5_Asssignment\images\7d53be5b-7584-4146-8f7d-9b8e0a2b7504.png" alt="Gallery Image 07"
+                        class="w-full h-full object-cover"
+                        onerror="this.style.display='none'; this.parentElement.querySelector('.fallback').classList.remove('hidden')">
+                    <div class="fallback hidden w-full h-full place-items-center bg-neutral-300 text-neutral-700 text-xs">
+                        Image 07
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 rounded-none border-4 border-base-100 overflow-hidden aspect-square">
+                    <img src="C:\Users\ferom\cs240\CS240-Week5_Asssignment\images\96d4a2f6-d222-43ad-8eeb-1b549aae086f.png" alt="Gallery Image 08"
+                        class="w-full h-full object-cover"
+                        onerror="this.style.display='none'; this.parentElement.querySelector('.fallback').classList.remove('hidden')">
+                    <div class="fallback hidden w-full h-full place-items-center bg-neutral-300 text-neutral-700 text-xs">
+                        Image 08
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bg-neutral-900 text-neutral-100 text-center px-5 py-14 md:py-16 mt-12 mb-8">
+            <h2 class="text-2xl md:text-4xl font-normal">a sentence here.</h2>
+            <p class="mt-2 text-xs">here's your sentence.</p>
+            <div class="divider w-12 mx-auto my-2 before:bg-neutral-600 after:bg-neutral-600"></div>
+            <p class="mt-8 text-xs text-neutral-500 font-sans">
+                © ใส่ชื่อของตัวเอง
+            </p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Close the mobile menu after clicking a link.
+        document.querySelectorAll('#mobile-menu a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
